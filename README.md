@@ -11,27 +11,28 @@ The mail flow can be represented as:
 ```php
 app/Console/Commands/MailTestCommand::handle()
 
-/* User provides 'id' within call, this is used create the static model instance required to generate the template as
-described in the command signature.  */ 
+/* User provides 'id' within call, this is used create the static model instance required to
+generate the template as described in the command signature.  */ 
 new app/Services/MailService
 
 //Routes to appropriate mail template class
 app/Services/MailService::send() 
 
-/* Generates the required model instance using the given id based on the template and creates variables to be accessed
-during view rendering */
+/* Generates the required model instance using the given id based on the template and
+creates variables to be accessedduring view rendering */
 new app/Mail/[template]
 
 //Builds appropriate mail template view with template variables
 app/Mail/[template]::build() 
 
-/* Templates reference component views in resources/views/components, which in turn call their respective component 
-class except in the case of anonymous components */
+/* Templates reference component views in resources/views/components, which in turn call their
+respective component class except in the case of anonymous components */
 resources/views/mail/templates/[template].blade.php
     app/View/Components/[component].php //passes component data to
     resources/views/components/[component].blade.php
 
-//Return rendered html to MailService where it is send with the email given within the initial command call
+/* Return rendered html to MailService where it is send with the email given within the
+initial command call */
 ```
 
 ## Styling and HTML structure
