@@ -1,0 +1,32 @@
+{
+    "chicretreats": {
+        "phone_customers": "+44 203 397 0085",
+        "phone_properties": "+44 203 397 0085",
+        "email": "reservations@chicretreats.com",     
+        "address": "",
+        "regards": "Chicretreats Reservations Team.",
+        "copyright": "Guestmaster International Ltd trading as ACOMOS\u2122",
+        "base_url": "https://extranet.chicretreats.com",
+        "additionalImages": {
+            "CRLogo": "CR_logo.gif"
+        }
+    },
+    "staybooked": {
+        "phone_customers": "+44 (0) 203 637 7085",
+        "phone_properties": "+44 (0) 203 637 7085",
+        "email": "reservations@staybooked.com",
+        "address": "",
+        "regards": "Stay Booked Reservations Team.",
+        "copyright": "Guestmaster International Ltd trading as ACOMOS\u2122",
+        "base_url": "https://extranet.staybooked.com",
+        "additionalImages": {
+            "SwanSB": "staybooked-withSwan.png"
+        }
+    },
+    "airsmiles": {
+        "base_url": "https://uat.chicretreats.com/"
+    },
+    "posh": {
+        "base_url": "https://uat.chicretreats.com/"
+    }
+}
